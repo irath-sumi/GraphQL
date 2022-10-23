@@ -14,16 +14,9 @@ namespace GraphQLBasic.Service
     {
         SchoolRepository _schoolRepository;
 
-        //public SchoolService()
-        //{
-        //    _schoolRepository = new SchoolRepository();
-        //}
-
-
+     
         List<Student> students = new List<Student>();
         List<Course> courses = new List<Course>();
-
-
 
         // Reading from the databse
         [UseDbContext(typeof(SchoolContext))]
